@@ -1108,16 +1108,27 @@ button {
   }
 
   .hero-nav {
-    gap: 0.35rem;
-    justify-content: flex-end;
-    width: fit-content;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 0.28rem;
+    width: 100%;
     max-width: 100%;
-    border-radius: 1.25rem;
+    padding: 0.28rem;
+    border-radius: 999px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .hero-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .hero-nav a {
-    font-size: 0.76rem;
-    padding: 0.38rem 0.7rem;
+    flex: 0 0 auto;
+    min-height: 1.9rem;
+    padding: 0.34rem 0.64rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
   }
 
   .timeline-card,
